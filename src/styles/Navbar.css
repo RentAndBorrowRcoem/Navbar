@@ -42,7 +42,9 @@
 .submit-link {
   background-color: #353433;
   color: white;
-  padding: 0.5rem 1rem;
+  /* padding: 0rem 1rem; */
+  padding-left: 6px;
+  padding-right: 2rem;
   border-radius: 4px;
   text-decoration: none;
   transition: background-color 0.3s ease;
