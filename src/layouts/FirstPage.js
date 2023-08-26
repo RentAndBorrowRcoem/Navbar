@@ -1,135 +1,74 @@
 import React from "react";
 import image1 from "../assests/hero-bg.jpg";
+import "font-awesome/css/font-awesome.min.css";
 import "../styles/FirstPage.css";
 import { Col, Row } from "react-bootstrap";
+import image6 from "../assests/icons8-iphone-14-50.png"
 
 function FirstPage() {
   return (
     <div>
-      <div style={{ position: "relative", height: "100vh", width: "100%" }}>
-        <img
-          src={image1}
-          alt="Background"
-          style={{ objectFit: "cover", width: "100%", height: "100%" }}
-        />
-        <div
-          style={{
-            position: "absolute",
-            top: 0,
-            left: 0,
-            width: "100%",
-            height: "100%",
-            backgroundColor: "black",
-            opacity: "0.7",
-          }}
-        />
+      <div className="bg-image">
+        <img src={image1} alt="Background" className="bg-image" />
+        <div className="overlay"></div>
       </div>
-      <div
-        style={{
-          position: "absolute",
-          top: "50%",
-          left: "50%",
-          textAlign: "center",
-          color: "white",
-          transform: "translate(-50%, -50%)",
-          width: "100%",
-        }}
-      >
+      <div className="text-content">
         <div>
           <h2 className="heading-2">More than 63 ads in 6 categories</h2>
-          <h1 className="heading-1"> List or find anything, literally</h1>
-          <div style={{ marginTop: "30px", width: "60%", marginLeft: "50%", transform: "translate(-50%, -50%)", }}>
-            <div class="search">
+          <h1 className="heading-1">List or find anything, literally</h1>
+          {/* <div className="wrap"> */}
+            <div className="search">
               <input
                 type="text"
-                class="searchTerm"
+                className="searchTerm"
                 placeholder="What are you looking for?"
               />
-              <button type="submit" class="searchButton">
-                <i class="fa fa-search"></i>
+              <button type="submit" className="searchButton">
+                <i className="fa fa-search"></i>
               </button>
             </div>
-          </div>
+          {/* </div> */}
         </div>
-
-        <div
-          style={{
-            position: "absolute",
-            top: "155%",
-            left: "50%",
-            textAlign: "center",
-            transform: "translate(-50%, -50%)",
-            width: "100%",
-          }}
-        >
+        <div className="img-box">
           <Row>
             <Col size={12} sm={4} md={4}>
-              <div
-                style={{
-                  display: "flex",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  flexWrap: "wrap",
-                  width: "100%"
-                }}
-              >
-                <div className="proj-imgbx">
-
+              <div className="proj-imgbx">
+                <a href="">
                   <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
-                    alt="Image 2"
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
-                    alt="Image 2"
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
-                    alt="Image 3"
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
-                    alt="Image 4"
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
-                    alt="Image 5"
-                  />
-                  <img
-                    src="https://upload.wikimedia.org/wikipedia/commons/thumb/e/e0/SNice.svg/640px-SNice.svg.png"
-                    style={{
-                      height: "100px",
-                      width: "100px",
-                      margin: "10px",
-                    }}
+                    src={image6}
                     alt="Image 6"
                   />
-                </div>
+                </a>
+                <a href="">
+                  <img
+                    src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?size=626&ext=jpg&ga=GA1.1.800555879.1692894673&semt=sph"
+                    alt="Image 2"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?size=626&ext=jpg&ga=GA1.1.800555879.1692894673&semt=sph"
+                    alt="Image 3"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?size=626&ext=jpg&ga=GA1.1.800555879.1692894673&semt=sph"
+                    alt="Image 4"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?size=626&ext=jpg&ga=GA1.1.800555879.1692894673&semt=sph"
+                    alt="Image 5"
+                  />
+                </a>
+                <a href="">
+                  <img
+                    src="https://img.freepik.com/free-vector/printed-circuit-board-concept-illustration_114360-5139.jpg?size=626&ext=jpg&ga=GA1.1.800555879.1692894673&semt=sph"
+                    alt="Image 6"
+                  />
+                </a>
               </div>
             </Col>
           </Row>

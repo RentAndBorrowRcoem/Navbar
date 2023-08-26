@@ -6,8 +6,10 @@ import { BrowserRouter } from 'react-router-dom';
 import "../src/layouts/Navbar";
 import FirstPage from './layouts/FirstPage';
 import SecondPage from './layouts/SecondPage';
+import PromoAds from './layouts/PromoAds';
 import HowItWorks from './components/HowItWorks';
 import Footer from './layouts/Footer';
+import PromoAdsWrapper from './layouts/PromoAdsWrapper';
 
 function App() {
   return (
@@ -20,6 +22,10 @@ function App() {
       </div>
       <div>
         <SecondPage/>
+      </div>
+      <div>
+        <PromoAds />
+        <PromoAdsWrapper/>
       </div>
       <div>
         <HowItWorks/>

@@ -1,20 +1,13 @@
 import React from "react";
 import { Container, Row, Col, Tab, Nav } from "react-bootstrap";
-import "../styles/FirstPage.css";
+// import "../styles/FirstPage.css";
+import { BsArrowRight } from "react-icons/bs";
+import { FaArrowRight } from "react-icons/fa";
 import "../styles/SecondPage.css";
 function SecondPage() {
   return (
     <div>
-      <div
-        style={{
-          display: "flex",
-          justifyContent: "space-between",
-          alignItems: "center",
-          marginTop: "50px",
-          marginLeft: "50px",
-          marginRight: "150px",
-        }}
-      >
+      <div className="full_page">
         <div>
           <h3 className="heading-2" style={{ marginBottom: 0 }}>
             Most popular
@@ -23,72 +16,60 @@ function SecondPage() {
             <b>Categories</b>
           </h1>
         </div>
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-          }}
-        >
-          <a href="Browse Categories" style={{ color: "black" }}>
+        <div className="flex_center">
+          <a href="Browse Categories" className="link_style">
             <h2 className="heading-2">Browse Categories</h2>
           </a>
-          <h3></h3>
-          <div className="heading-2" style={{ margin: "20px" }}>
+          <h3>
+            <BsArrowRight className="arrow-icon" />
+          </h3>
+          {/* <div className="heading-2" style={{ margin: "20px" }}>
             <i className="fa-solid fa-arrow-right" />
-          </div>
+          </div> */}
         </div>
       </div>
-      <div
-        style={{
-          display: "flex",
-          // justifyContent: "center",
-          marginTop: "20px",
-          justifyContent:"center",
-          // color: "white",
-          // transform: "translate(-50%, -50%)",
-          width: "100%",
-        }}
-      >
-        
+      <div className="image_style">
         <Row>
           <Col size={12} sm={6} md={4}>
-
             <div className="proj-imgbx">
+              <div className="image-container">
+                <img
+                  src="https://images.unsplash.com/photo-1550009158-9ebf69173e03?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OXx8ZWxlY3Ryb25pY3N8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=500&q=60"
+                  style={{ height: 325, width: 175, margin: "10px" }}
+                  alt="Image 4"
+                />
+                <div className="image-text">Electronics</div>
+              </div>
+              {/* </div> */}
+
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pZChDEv9TjrqSTqxRg5D42-oVj-pPg9otw&usqp=CAU"
+                src="https://images.unsplash.com/photo-1598327105666-5b89351aff97?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8bW9iaWxlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 style={{ height: 325, width: 175, margin: "10px" }}
                 alt="Image 4"
               />
 
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pZChDEv9TjrqSTqxRg5D42-oVj-pPg9otw&usqp=CAU"
+                src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZnVybml0dXJlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                 style={{ height: 325, width: 175, margin: "10px" }}
                 alt="Image 4"
               />
 
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pZChDEv9TjrqSTqxRg5D42-oVj-pPg9otw&usqp=CAU"
-                style={{ height: 325, width: 175, margin: "10px" }}
-                alt="Image 4"
-              />
-
-              <img
-                src="https://img.freepik.com/premium-photo/collection-different-makeup-products-arranged-artistic-display_193437-3721.jpg?w=2000"
+                src="https://plus.unsplash.com/premium_photo-1673125287084-e90996bad505?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Y2xvdGhlc3xlbnwwfHwwfHx8MA%3D%3D&auto=format&fit=crop&w=500&q=60"
                 style={{ height: 325, width: 175, margin: "10px" }}
                 alt="Image 1"
               />
 
               <img
-                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9pZChDEv9TjrqSTqxRg5D42-oVj-pPg9otw&usqp=CAU"
+                src="https://images.unsplash.com/photo-1470224114660-3f6686c562eb?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8cGFya2luZyUyMHNwYWNlfGVufDB8fDB8fHww&auto=format&fit=crop&w=500&q=60"
                 style={{ height: 325, width: 175, margin: "10px" }}
                 alt="Image 4"
               />
             </div>
-
           </Col>
         </Row>
       </div>
-    </div >
+    </div>
   );
 }
 
